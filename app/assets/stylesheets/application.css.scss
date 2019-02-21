@@ -1,0 +1,25 @@
+@import "semantic-ui";
+/*
+ *= require_tree .
+ *= require_self
+ */
+body {
+  background-color: black;
+}
+
+#form-inline {
+  text-align: center;
+}
+
+.form-control {
+  padding: 20px;
+  margin: 15px;
+}
+.form-group {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn btn-primary {
+  padding: 10px;
+}

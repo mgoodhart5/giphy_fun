@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GiphyLife</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="fancy">
+    <%= form_tag :search, method: :get, id: "form-inline" do %>
+      <div class="form-group">
+        <%= text_field_tag :q, nil, placeholder: "fun word", class: "form-control" %>
+        <%= submit_tag "Be Fancy", class: "btn btn-outline-dark btn-lg" %>
+      </div>
+    <% end %>
+  </div>
+    <%= yield %>
+  </body>
+</html>
